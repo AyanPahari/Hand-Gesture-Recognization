@@ -33,7 +33,7 @@ Thus, the entire problem could be solved using 2 simple step:
 
     Our ROI is the hand region, so we capture the images of the hand and convert them to grayscale
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AyanPahari/Hand-Gesture-Recognization/blob/master/Steps/step1.1.JPG)
 
 #### 2.  Blur Image
 
@@ -42,31 +42,31 @@ Thus, the entire problem could be solved using 2 simple step:
     2. By blurring, we create smooth transitionfrom one color to another and reduce the edge content. 
        We use thresholding for image segmentation, to create binary images from grayscale images.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AyanPahari/Hand-Gesture-Recognization/blob/master/Steps/step1.2.JPG)
 
 #### 3.  Thresholding
 
     1. In very basic terms, thresholding is like a Low Pass Filter by allowing onlyparticular color ranges to be highlighted as white while the other colors aresuppressed by showing them as black.
     2. We’ve used Otsu’s Binarization method. In this method, OpenCV automatically calculates/approximates the threshold value of a bimodal image from its image histogram. But for optimal results, we may need a clear background in front of the webcam which sometimes may not be possible.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AyanPahari/Hand-Gesture-Recognization/blob/master/Steps/step1.3.JPG)
 
 #### 4.  Draw Contours
 
     Using the threshold image we draw the contours
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AyanPahari/Hand-Gesture-Recognization/blob/master/Steps/step1.4.JPG)
 
 #### 5. Find convex hull and convexity defects
 
     We now find the convex points and the defect points. The convex points are generally, the tip of the fingers. But there are other convex point too. So, we find convexity defects, which is the deepest point of deviation on the contour. By this we can find the number of fingers extended and then we can perform different functions accordingto the number of fingers extended.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AyanPahari/Hand-Gesture-Recognization/blob/master/Steps/step1.5.JPG)
 
 
 ## Screenshots
 
-![Output Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Output Screenshot](https://github.com/AyanPahari/Hand-Gesture-Recognization/blob/master/screenshot.JPG)
 
 #### Note
 
